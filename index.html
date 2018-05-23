@@ -13,7 +13,7 @@
                 height: 955px;
                 width: 100%;
                 background-image: url('img/header-bg.png');
-                background-size: 
+                background-size: auto;
             }
             body{
                 text-align: center;
@@ -27,6 +27,23 @@
                 text-align:left;
                 width: 800px;
                 margin: 0 auto;
+                height:100%;
+            }
+            h2{
+                font-family:helvetica;
+                color:#489ec0;
+            }
+            a{
+                text-decoration:none;                
+                font-family:helvetica;
+                color:black;
+            }
+            a:hover{
+                color:#489ec0;
+                text-decoration:none;                
+            }
+            p,div{
+                font-family:helvetica;
             }
             ul {
                 text-align: right;
@@ -50,6 +67,9 @@
                 display:block;
                 float:left;
                 width:70%;
+                border-right-color:#489ec0;
+                border-right:1px;
+                border-right-style:solid;
             }
             .address-info{
                 float:left;
@@ -62,10 +82,17 @@
             .blog-item {
                 display: block;
             }
-            footer {
-                display: ;
-                background-color: #7d7d7d;
-                color:
+            .social-footer {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                right:0;
+                height: 150px;
+                width: 100%;
+                background: #7d7d7d;
+                border-top: #3194b4;
+                border-top-style: solid;
+                border-top-width: thick;
             }
         </style>
         
@@ -108,7 +135,7 @@
                 </p>
                 <br>
                 <h2>Contact Us</h2>
-                <div style="inline-block">
+                <div style="display:inline-block">
                     <div class="address-info">
                         Frisco Headquarters<br>
                         Software Development Office<br>
@@ -141,7 +168,7 @@
                 </div>
                 
             </aside>
-            <div id="social-footer">
+            <div class="social-footer">
                 <a href="http://www.facebook.com" title="Code Authority Facebook"><img src="img/fb-icon.png" alt="" /></a>
                 <a href="http://www.twitter.com" title="Code Authority Twitter"><img src="img/twt-icon.png" alt="" /></a>
                 <a href="http://www.linkedin.com" title="Code Authority LinkedIn "><img src="img/li-icon.png" alt="" /></a>
